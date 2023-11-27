@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Country List</h1>
+
+        <br>
+
+        <form id="searchForm">
+            <div class="inputwrapper">
+                <label for="currencySymbol">Currency Symbol:</label>
+                <input type="text" class="jsCurrencySymbol" name="currencySymbol" placeholder="Ex.:$">
+
+                <label for="name">Name:</label>
+                <input type="text" class="jsName" name="name" placeholder="Ex.:Latvia">
+
+                <label for="capital">Capital:</label>
+                <input type="text" class="jsCapital" name="capital" placeholder="Ex.:Riga">
+
+                <label for="currencyName">Currency Name:</label>
+                <input type="text" class="jsCurrencyName" name="currencyName" placeholder="Ex.:Euro">
+
+                <label for="languageName">Language Name:</label>
+                <input type="text" class="jsLanguageName" name="languageName" placeholder="Ex.:Latvian">
+            </div>
+
+            <br>
+
+            <div class="btn-wrapper">
+                <button type="button" class="btn btn-primary jsSearchBtn">Search</button>
+            </div>
+        </form>
+
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Currency Symbol</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Capital</th>
+                    <th scope="col">Currency name</th>
+                    <th scope="col">Language name</th>
+                </tr>
+            </thead>
+            <tbody class="jsTableBody"></tbody>
+        </table>
+
+        <div class="pagination mt-3" style="display: flex; justify-content: center;">
+            <button type="button" class="btn btn-secondary jsPaginationPrev">Previous</button>
+
+            <span class="mx-2">Page <span class="jsCurrentPage">1</span> of <span class="jsTotalPages">12</span></span>
+            
+            <button type="button" class="btn btn-secondary jsPaginationNext">Next</button>
+        </div>
+    </div>
+
+    <br>
+
+    <script type="module" src="scripts.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+

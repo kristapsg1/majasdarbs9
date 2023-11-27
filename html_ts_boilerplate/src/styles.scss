@@ -1,0 +1,22 @@
+h1{
+  justify-content: center;
+  display: flex;
+}
+
+form{
+  display: flex;
+  gap: 5px;
+  
+  flex-direction: column;
+}
+
+.inputwrapper{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btn-wrapper{
+  justify-content: center;
+  display: flex;
+}
